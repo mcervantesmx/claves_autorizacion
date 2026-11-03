@@ -1,0 +1,9 @@
+{
+  "name": "Calculadora 13001",
+  "short_name": "Calc13001",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0078D4",
+  "icons": []
+}

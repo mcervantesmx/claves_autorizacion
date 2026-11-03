@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora Módulo 13001</title>
+
+manifest.json
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    max-width: 500px;
+    margin: 50px auto;
+    padding:20px;
+    text-align:center;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    font-size:20px;
+    margin:10px 0;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    font-size:20px;
+    background:#0078D4;
+    color:white;
+    border:none;
+    border-radius:8px;
+}
+
+#resultado{
+    margin-top:20px;
+    font-size:32px;
+    font-weight:bold;
+    color:#0078D4;
+}
+</style>
+
+</head>
+<body>
+
+<h2>Calculadora 13001</h2>
+
+<input type="number" id="numero" placeholder="Ingrese número">
+
+<button onclick="calcular()">
+Calcular
+</button>
+
+<div id="resultado"></div>
+
+<script>
+function calcular(){
+
+    let n = Number(document.getElementById("numero").value);
+
+    if(isNaN(n)){
+        alert("Ingrese un número válido");
+        return;
+    }
+
+    let resultado = n % 13001;
+
+    document.getElementById("resultado").innerText =
+        resultado;
+}
+</script>
+
+</body>
+</html>
